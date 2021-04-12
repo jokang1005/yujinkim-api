@@ -3,6 +3,8 @@
 ///////////////////////////
 //1. import environmental variables 
 require("dotenv").config()
+//////and then destructure all the enviornmental variables
+const {PORT, NODE_ENV}
 //2. import other dependencies
 const express = require("express")
 const app = express()
