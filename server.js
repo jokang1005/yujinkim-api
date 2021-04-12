@@ -8,6 +8,7 @@ const {PORT, NODE_ENV} = process.env
 //2. import other dependencies
 const express = require("express")
 const app = express()
+const mongoose = require("./db/conn")
 const morgan = require("morgan")
 const cors = require("cors")
 const corsOptions = require("./config/cors")
@@ -25,7 +26,9 @@ app.use(express.static("public"))
 ///////////////////////////
 //ROUTES//
 ///////////////////////////
-
+app.get("/", (req, res) => {
+    res.send("Hello World")
+})
 
 
 ///////////////////////////
