@@ -20,3 +20,17 @@ app.use(NODE_ENV === "production" ? cors(corsOptions) : cors())
 app.use(morgan("tiny"))
 app.use(express.json())
 app.use(express.static("public"))
+
+
+///////////////////////////
+//ROUTES//
+///////////////////////////
+
+
+
+///////////////////////////
+//LISTENER//
+///////////////////////////
+app.listen(PORT, () => {
+    console.log(`Listening on PORT ${PORT}`)
+})
