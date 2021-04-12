@@ -17,3 +17,6 @@ const corsOptions = require("./config/cors")
 ///////////////////////////
 //1. first middleware should always be cors to prevent unauthorized access to server. look at npmjs.com and look at cors documentation. use config folder for misc type info.
 app.use(NODE_ENV === "production" ? cors(corsOptions) : cors())
+app.use(morgan("tiny"))
+app.use(express.json())
+app.use(express.static("public"))
