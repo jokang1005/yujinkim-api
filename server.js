@@ -13,6 +13,7 @@ const morgan = require("morgan")
 const cors = require("cors")
 const corsOptions = require("./config/cors")
 
+
 ///////////////////////////
 //SETUP MIDDLEWARE//
 ///////////////////////////
@@ -27,7 +28,7 @@ app.use(express.static("public"))
 //ROUTES//
 ///////////////////////////
 app.get("/", (req, res) => {
-    res.send("Hello World")
+    res.send("HELLO")
 })
 
 
